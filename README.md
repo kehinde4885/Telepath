@@ -10,5 +10,4 @@ Documentation of Steps
 - Create Page HTML Structure
 - Design UI Elements in Figma
 - This project would now use React
-
-Note: Convert Project to React
+- Added Prettier and Preetier Tailwind Plugin for sorting the tailwind Class names
