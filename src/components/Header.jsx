@@ -2,9 +2,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-[1]">
       <div className="relative flex h-0 justify-center">
-        <div className="absolute flex h-[60px] w-max items-center gap-10 rounded-br-3xl rounded-bl-3xl bg-jet px-10">
+        <div className="absolute backdrop-blur-[80px] flex h-[60px] w-max items-center gap-10 rounded-br-3xl rounded-bl-3xl bg-jet px-10">
           <div>
             <svg
               // width="120"
@@ -12,7 +12,7 @@ const Header = () => {
               viewBox="0 0 120 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-[20px] w-[120px] text-black"
+              className="h-[20px] w-[120px] text-white"
             >
               <g clip-path="url(#clip0_26_10)">
                 <path
