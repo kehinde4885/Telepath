@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "SuisseIntlMono";
+  src: url("./SuisseIntlMono-Regular-WebXL.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("./SuisseIntl-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPEditorialOld";
+  src: url("./PPEditorialOld-Ultralight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPEditorialOld";
+  src: url("./PPEditorialOld-UltralightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}

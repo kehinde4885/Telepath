@@ -1,2 +1,32 @@
-@import "tailwindcss";
+/* Under the Hood */
+/* 
+@layer theme, base, components, utilities;
+@import "./theme.css" layer(theme);
+@import "./preflight.css" layer(base);
+@import "./utilities.css" layer(utilities); */
 
+@import "tailwindcss";
+@import "../fonts/fonts.css";
+
+@theme {
+  --color-*: initial;
+  --font-*: initial;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-jet: rgba(53,53,53,0.5);
+  --color-lime: #22d504;
+  --font-mono:
+    SuisseIntlMono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --font-sans:
+    SuisseIntl, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: PPEditorialOld, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+
+@layer base {
+  :root{
+    font-family: var(--font-sans);
+  }
+}
