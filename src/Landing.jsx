@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import { Button2, Button3 } from "./components/Button";
 import Button from "./components/Button";
+import OrchidExp from "./components/OrchidExp";
 
 const Landing = () => {
   return (
@@ -244,6 +245,10 @@ const Landing = () => {
             </div>
             {/*  */}
           </article>
+        </section>
+
+        <section className="h-screen bg-black px-10 pt-14 pb-24">
+          <OrchidExp />
         </section>
       </main>
     </>

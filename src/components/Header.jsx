@@ -14,7 +14,7 @@ const Header = () => {
               xmlns="http://www.w3.org/2000/svg"
               className="h-[20px] w-[120px] text-white"
             >
-              <g clip-path="url(#clip0_26_10)">
+              <g clipPath="url(#clip0_26_10)">
                 <path
                   d="M25.5745 2.57017H20.5575V0.00390625H33.8309V2.57017H28.7911V16.0642H25.5745V2.57017Z"
                   fill="currentcolor"
