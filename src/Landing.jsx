@@ -104,8 +104,8 @@ const Landing = () => {
           </div>
         </section>
 
-        <section className="bg-bone">
-          <article className="grid grid-cols-5">
+        <section className="grid grid-cols-5 bg-bone">
+          <article className="col-span-full grid grid-cols-subgrid">
             {/*  */}
             <article className="order-1 col-span-3 p-6">
               <div className="aspect-[61/48] overflow-hidden rounded-[100px]">
@@ -142,7 +142,7 @@ const Landing = () => {
             {/*  */}
           </article>
 
-          <article className="grid grid-cols-5">
+          <article className="col-span-full grid grid-cols-subgrid">
             {/*  */}
             <article className="col-span-3 p-6">
               <div className="overflow-hidden rounded-[100px]">
@@ -172,7 +172,7 @@ const Landing = () => {
             {/*  */}
           </article>
 
-          <article className="grid grid-cols-5">
+          <article className="col-span-full grid grid-cols-subgrid">
             {/*  */}
             <article className="order-1 col-span-3 p-6">
               <div className="aspect-[61/48] overflow-hidden rounded-[100px]">
@@ -208,7 +208,7 @@ const Landing = () => {
             {/*  */}
           </article>
 
-          <article className="grid grid-cols-5">
+          <article className="col-span-full grid grid-cols-subgrid">
             {/*  */}
             <article className="col-span-3 p-6">
               <div className="aspect-[61/48] overflow-hidden rounded-[100px]">
@@ -247,8 +247,135 @@ const Landing = () => {
           </article>
         </section>
 
-        <section className="h-screen bg-black px-10 pt-14 pb-24">
-          <OrchidExp />
+        <section className="bg-black">
+          <div className="px-10 pt-14 pb-24">
+            <OrchidExp />
+          </div>
+
+          <hr className="text-white opacity-60" />
+
+          <section id="audioPreview" className="grid grid-cols-[max-content_1fr] px-10 pt-14 pb-24 gap-y-14">
+            <h2 className="heading2 max-w-[15ch] font-serif text-[64px] text-pretty text-white">
+              You'll know it when you <em>hear</em> it.
+            </h2>
+
+            <p className="max-w-[40ch] justify-self-end text-lg text-pretty text-white">
+              Orchid’s synth engine is made up of 3 separate synths: a
+              polyphonic virtual analogue subtractive synth, an FM synth and a
+              vintage reed piano emulation based off a famous 60s electric piano
+              with mechanical noise samples for added realism.
+            </p>
+
+            <article className="col-span-full flex justify-between gap-4">
+              {/* Full Card */}
+              <div className="max-w-[325px] space-y-4">
+                {/* Video Card */}
+                <div className="relative aspect-square overflow-hidden rounded-sm">
+                  <img className="h-full w-full" src="/reed.jpg" alt="" />
+                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
+                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
+                      <svg
+                        // width="17"
+                        // height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="aspect-square w-[32px]">
+                        <path
+                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Video Title */}
+                <p className="font-mono text-white uppercase"> 01 reed piano</p>
+              </div>
+
+              {/* Full Card */}
+              <div className="max-w-[325px] space-y-4">
+                {/* Video Card */}
+                <div className="relative aspect-square overflow-hidden rounded-sm">
+                  <img className="h-full w-full" src="/reed.jpg" alt="" />
+                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
+                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
+                      <svg
+                        // width="17"
+                        // height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="aspect-square w-[32px]">
+                        <path
+                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Video Title */}
+                <p className="font-mono text-white uppercase"> 01 reed piano</p>
+              </div>
+
+              {/* Full Card */}
+              <div className="max-w-[325px] space-y-4">
+                {/* Video Card */}
+                <div className="relative aspect-square overflow-hidden rounded-sm">
+                  <img className="h-full w-full" src="/reed.jpg" alt="" />
+                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
+                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
+                      <svg
+                        // width="17"
+                        // height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="aspect-square w-[32px]">
+                        <path
+                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Video Title */}
+                <p className="font-mono text-white uppercase"> 01 reed piano</p>
+              </div>
+
+              {/* Full Card */}
+              <div className="max-w-[325px] space-y-4">
+                {/* Video Card */}
+                <div className="relative aspect-square overflow-hidden rounded-sm">
+                  <img className="h-full w-full" src="/reed.jpg" alt="" />
+                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
+                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
+                      <svg
+                        // width="17"
+                        // height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="aspect-square w-[32px]">
+                        <path
+                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Video Title */}
+                <p className="font-mono text-white uppercase"> 01 reed piano</p>
+              </div>
+            </article>
+          </section>
         </section>
       </main>
     </>

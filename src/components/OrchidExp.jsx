@@ -31,6 +31,7 @@ const grpStyle3 = "bg-khaki text-black";
 const OrchidExp = () => {
   return (
     <article className="grid grid-cols-[1fr_380px] gap-6">
+
       <section className="px-14">
         <div className="relative z-0">
           <img src="orchidHard.webp" alt="" className="h-full w-full" />
@@ -63,7 +64,8 @@ const OrchidExp = () => {
           </div>
         </div>
       </section>
-      <div className="text-white">
+      {/*  */}
+      <section className="text-white">
         <h2 className="heading font-serif text-[64px]">Explore Orchid</h2>
         <hr />
         <div className="grid grid-cols-2 gap-x-2 gap-y-4 pt-4">
@@ -117,7 +119,8 @@ const OrchidExp = () => {
             settings.
           </p>
         </div>
-      </div>
+      </section>
+      
     </article>
   );
 };
