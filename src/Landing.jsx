@@ -254,21 +254,27 @@ const Landing = () => {
 
           <hr className="text-white opacity-60" />
 
-          <section id="audioPreview" className="grid grid-cols-[max-content_1fr] px-10 pt-14 pb-24 gap-y-14">
-            <h2 className="heading2 max-w-[15ch] font-serif text-[64px] text-pretty text-white">
-              You'll know it when you <em>hear</em> it.
-            </h2>
+          <section
+            id="audioPreview"
+            className="grid grid-cols-4 gap-y-14 px-10 pt-14 pb-24">
+            {/*  */}
 
-            <p className="max-w-[40ch] justify-self-end text-lg text-pretty text-white">
-              Orchid’s synth engine is made up of 3 separate synths: a
-              polyphonic virtual analogue subtractive synth, an FM synth and a
-              vintage reed piano emulation based off a famous 60s electric piano
-              with mechanical noise samples for added realism.
-            </p>
+            <div className="flex col-span-full content-between ">
+              <h2 className="heading2 max-w-[15ch] font-serif text-[64px] text-pretty text-white">
+                You'll know it when you <em>hear</em> it.
+              </h2>
 
-            <article className="col-span-full flex justify-between gap-4">
+              <p className="max-w-[40ch] justify-self-end text-lg text-pretty text-white">
+                Orchid’s synth engine is made up of 3 separate synths: a
+                polyphonic virtual analogue subtractive synth, an FM synth and a
+                vintage reed piano emulation based off a famous 60s electric
+                piano with mechanical noise samples for added realism.
+              </p>
+            </div>
+
+            <article className="col-span-full grid grid-cols-subgrid justify-between gap-4">
               {/* Full Card */}
-              <div className="max-w-[325px] space-y-4">
+              <div className="space-y-4">
                 {/* Video Card */}
                 <div className="relative aspect-square overflow-hidden rounded-sm">
                   <img className="h-full w-full" src="/reed.jpg" alt="" />
@@ -295,7 +301,7 @@ const Landing = () => {
               </div>
 
               {/* Full Card */}
-              <div className="max-w-[325px] space-y-4">
+              <div className="space-y-4">
                 {/* Video Card */}
                 <div className="relative aspect-square overflow-hidden rounded-sm">
                   <img className="h-full w-full" src="/reed.jpg" alt="" />
@@ -322,7 +328,7 @@ const Landing = () => {
               </div>
 
               {/* Full Card */}
-              <div className="max-w-[325px] space-y-4">
+              <div className="space-y-4">
                 {/* Video Card */}
                 <div className="relative aspect-square overflow-hidden rounded-sm">
                   <img className="h-full w-full" src="/reed.jpg" alt="" />
@@ -349,7 +355,7 @@ const Landing = () => {
               </div>
 
               {/* Full Card */}
-              <div className="max-w-[325px] space-y-4">
+              <div className="space-y-4">
                 {/* Video Card */}
                 <div className="relative aspect-square overflow-hidden rounded-sm">
                   <img className="h-full w-full" src="/reed.jpg" alt="" />
@@ -376,6 +382,77 @@ const Landing = () => {
               </div>
             </article>
           </section>
+        </section>
+
+        <section id="accessories" className="grid grid-cols-4 gap-x-6 gap-y-14 bg-white px-10 pt-14 pb-24">
+          <div className="col-span-full flex items-center justify-between gap-4">
+            <h2 className="heading2 font-serif text-[64px]">Accessories</h2>
+            <Button3 text={"shop all"} />
+          </div>
+
+          <article className="space-y-4">
+            <div className="aspect-square rounded-lg">
+              <img
+                className="h-full w-full rounded-lg object-cover"
+                src="/orchid5.jpg"
+                alt=""
+              />
+            </div>
+
+            <div className="space-y-2 text-black">
+              <p className="text-lg capitalize">Blue Orchid beanie</p>
+              <p className="font-mono">$30.00</p>
+            </div>
+          </article>
+
+          <article className="space-y-4">
+            <div className="aspect-square rounded-lg">
+              <img
+                className="h-full w-full rounded-lg object-cover"
+                src="/orchid5.jpg"
+                alt=""
+              />
+            </div>
+
+            <div className="space-y-2 text-black">
+              <p className="text-lg capitalize">Blue Orchid beanie</p>
+              <p className="font-mono">$30.00</p>
+            </div>
+          </article>
+
+          <article className="space-y-4">
+            <div className="aspect-square rounded-lg">
+              <img
+                className="h-full w-full rounded-lg object-cover"
+                src="/orchid5.jpg"
+                alt=""
+              />
+            </div>
+
+            <div className="space-y-2 text-black">
+              <p className="text-lg capitalize">Blue Orchid beanie</p>
+              <p className="font-mono">$30.00</p>
+            </div>
+          </article>
+
+          <article className="space-y-4">
+            <div className="aspect-square rounded-lg">
+              <img
+                className="h-full w-full rounded-lg object-cover"
+                src="/orchid5.jpg"
+                alt=""
+              />
+            </div>
+
+            <div className="space-y-2 text-black">
+              <p className="text-lg capitalize">Blue Orchid beanie</p>
+              <p className="font-mono">$30.00</p>
+            </div>
+          </article>
+        </section>
+
+        <section>
+
         </section>
       </main>
     </>
