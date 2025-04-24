@@ -4,6 +4,8 @@ import { Button2, Button3 } from "./components/Button";
 import Button from "./components/Button";
 import OrchidExp from "./components/OrchidExp";
 
+const faqArr = Array(15).fill(null);
+
 const Landing = () => {
   return (
     <>
@@ -259,12 +261,12 @@ const Landing = () => {
             className="grid grid-cols-4 gap-y-14 px-10 pt-14 pb-24">
             {/*  */}
 
-            <div className="flex col-span-full content-between ">
+            <div className="col-span-full flex justify-between">
               <h2 className="heading2 max-w-[15ch] font-serif text-[64px] text-pretty text-white">
                 You'll know it when you <em>hear</em> it.
               </h2>
 
-              <p className="max-w-[40ch] justify-self-end text-lg text-pretty text-white">
+              <p className="max-w-[40ch] text-lg text-pretty text-white">
                 Orchid’s synth engine is made up of 3 separate synths: a
                 polyphonic virtual analogue subtractive synth, an FM synth and a
                 vintage reed piano emulation based off a famous 60s electric
@@ -274,186 +276,123 @@ const Landing = () => {
 
             <article className="col-span-full grid grid-cols-subgrid justify-between gap-4">
               {/* Full Card */}
-              <div className="space-y-4">
-                {/* Video Card */}
-                <div className="relative aspect-square overflow-hidden rounded-sm">
-                  <img className="h-full w-full" src="/reed.jpg" alt="" />
-                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
-                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
-                      <svg
-                        // width="17"
-                        // height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="aspect-square w-[32px]">
-                        <path
-                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
+              {new Array(4).fill(null).map(() => (
+                <div className="space-y-4">
+                  {/* Video Card */}
+                  <div className="relative aspect-square overflow-hidden rounded-sm">
+                    <img className="h-full w-full" src="/reed.jpg" alt="" />
+                    <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
+                      <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
+                        <svg
+                          // width="17"
+                          // height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="aspect-square w-[32px]">
+                          <path
+                            d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
+                            fill="currentcolor"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
+
+                  {/* Video Title */}
+                  <p className="font-mono text-white uppercase">
+                    {" "}
+                    01 reed piano
+                  </p>
                 </div>
-
-                {/* Video Title */}
-                <p className="font-mono text-white uppercase"> 01 reed piano</p>
-              </div>
-
-              {/* Full Card */}
-              <div className="space-y-4">
-                {/* Video Card */}
-                <div className="relative aspect-square overflow-hidden rounded-sm">
-                  <img className="h-full w-full" src="/reed.jpg" alt="" />
-                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
-                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
-                      <svg
-                        // width="17"
-                        // height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="aspect-square w-[32px]">
-                        <path
-                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Video Title */}
-                <p className="font-mono text-white uppercase"> 01 reed piano</p>
-              </div>
-
-              {/* Full Card */}
-              <div className="space-y-4">
-                {/* Video Card */}
-                <div className="relative aspect-square overflow-hidden rounded-sm">
-                  <img className="h-full w-full" src="/reed.jpg" alt="" />
-                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
-                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
-                      <svg
-                        // width="17"
-                        // height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="aspect-square w-[32px]">
-                        <path
-                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Video Title */}
-                <p className="font-mono text-white uppercase"> 01 reed piano</p>
-              </div>
-
-              {/* Full Card */}
-              <div className="space-y-4">
-                {/* Video Card */}
-                <div className="relative aspect-square overflow-hidden rounded-sm">
-                  <img className="h-full w-full" src="/reed.jpg" alt="" />
-                  <div className="group/audcard absolute inset-0 flex cursor-pointer items-center justify-center">
-                    <button className="absolute flex aspect-square w-[100px] items-center justify-center rounded-full border-2 border-white text-white mix-blend-exclusion group-hover/audcard:bg-white group-hover/audcard:text-black">
-                      <svg
-                        // width="17"
-                        // height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="aspect-square w-[32px]">
-                        <path
-                          d="M14.5001 8.89665L3.16675 15.5633V2.22998L14.5001 8.89665Z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Video Title */}
-                <p className="font-mono text-white uppercase"> 01 reed piano</p>
-              </div>
+              ))}
             </article>
           </section>
         </section>
 
-        <section id="accessories" className="grid grid-cols-4 gap-x-6 gap-y-14 bg-white px-10 pt-14 pb-24">
+        <section
+          id="accessories"
+          className="grid grid-cols-4 gap-x-6 gap-y-14 bg-white px-10 pt-14 pb-24">
           <div className="col-span-full flex items-center justify-between gap-4">
             <h2 className="heading2 font-serif text-[64px]">Accessories</h2>
             <Button3 text={"shop all"} />
           </div>
 
-          <article className="space-y-4">
-            <div className="aspect-square rounded-lg">
-              <img
-                className="h-full w-full rounded-lg object-cover"
-                src="/orchid5.jpg"
-                alt=""
-              />
-            </div>
+          {new Array(4).fill(null).map(() => (
+            <article className="space-y-4">
+              <div className="aspect-square rounded-lg">
+                <img
+                  className="h-full w-full rounded-lg object-cover"
+                  src="/orchid5.jpg"
+                  alt=""
+                />
+              </div>
 
-            <div className="space-y-2 text-black">
-              <p className="text-lg capitalize">Blue Orchid beanie</p>
-              <p className="font-mono">$30.00</p>
-            </div>
-          </article>
-
-          <article className="space-y-4">
-            <div className="aspect-square rounded-lg">
-              <img
-                className="h-full w-full rounded-lg object-cover"
-                src="/orchid5.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className="space-y-2 text-black">
-              <p className="text-lg capitalize">Blue Orchid beanie</p>
-              <p className="font-mono">$30.00</p>
-            </div>
-          </article>
-
-          <article className="space-y-4">
-            <div className="aspect-square rounded-lg">
-              <img
-                className="h-full w-full rounded-lg object-cover"
-                src="/orchid5.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className="space-y-2 text-black">
-              <p className="text-lg capitalize">Blue Orchid beanie</p>
-              <p className="font-mono">$30.00</p>
-            </div>
-          </article>
-
-          <article className="space-y-4">
-            <div className="aspect-square rounded-lg">
-              <img
-                className="h-full w-full rounded-lg object-cover"
-                src="/orchid5.jpg"
-                alt=""
-              />
-            </div>
-
-            <div className="space-y-2 text-black">
-              <p className="text-lg capitalize">Blue Orchid beanie</p>
-              <p className="font-mono">$30.00</p>
-            </div>
-          </article>
+              <div className="space-y-2 text-black">
+                <p className="text-lg capitalize">Blue Orchid beanie</p>
+                <p className="font-mono">$30.00</p>
+              </div>
+            </article>
+          ))}
         </section>
 
-        <section>
+        <section
+          id="faq"
+          className="grid grid-cols-2 items-start bg-black px-10 pt-14 pb-24 text-white transition-[height] duration-5000">
+          <h2 className="heading2 max-w-[15ch] font-serif text-[64px] text-white">
+            Frequently asked questions
+          </h2>
 
+          <div>
+            {/*  */}
+            {faqArr.map(() => (
+              <details className="group/dd overflow-hidden border-t-2 opacity-60 transition-colors duration-200 details-content:h-0 details-content:transition-[height,content-visibility] details-content:transition-discrete details-content:duration-200 open:opacity-100 open:details-content:h-auto">
+                <summary className="flex list-none items-center justify-between py-4 text-lg">
+                  <p>Why 1000 units?</p>
+                  <span className="transition-transform duration-500 group-open/dd:rotate-180">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.52851 5.52876C3.78886 5.26841 4.21097 5.26841 4.47132 5.52876L7.99992 9.05735L11.5285 5.52876C11.7889 5.26841 12.211 5.26841 12.4713 5.52876C12.7317 5.78911 12.7317 6.21122 12.4713 6.47157L8.47132 10.4715C8.21097 10.7319 7.78886 10.7319 7.52851 10.4715L3.52851 6.47157C3.26816 6.21122 3.26816 5.78911 3.52851 5.52876Z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="space-y-4 pr-2 pb-6">
+                  <p className="">
+                    Orchid is a brand new type of instrument. Which means
+                    there’s going to be so many interesting and unexpected ways
+                    to play it. Ways that we couldn’t anticipate ourselves.
+                    That's why we're starting with a small number of units and
+                    users so we can get feedback on the software, and iterate
+                    accordingly.
+                  </p>
+                  <p>
+                    Software updates based on user feedback will be posted
+                    regularly on a secret URL, and typically take about 1-3
+                    minutes.
+                  </p>
+                  <p>
+                    Please note that Orchid will be shipping as a fully realised
+                    hardware product. There will be no changes to the hardware
+                    for the foreseeable future — the units we’ll ship to the
+                    wider public in Summer 2025 will be exactly the same...
+                    they’ll just be a little less
+                  </p>
+                </div>
+              </details>
+            ))}
+          </div>
         </section>
+
+        <section className="h-screen bg-white"></section>
       </main>
     </>
   );
