@@ -12,9 +12,10 @@
   --color-*: initial;
   --font-*: initial;
   --color-black: #000;
+  --color-silver: rgba(163,163,163);
   --color-white: #fff;
   --color-jet: rgba(53, 53, 53, 0.5);
-  --color-pink: ##eb7bc0;
+  --color-pink: #eb7bc0;
   --color-lime: #22d504;
   --color-bone: #d5cdba;
   --color-jasper: #c25233;
@@ -22,6 +23,7 @@
   --color-yellow: #f4ad31;
   --color-khaki: #bbab8e;
   --color-red: #d24825;
+  --color-charcoal: #191919;
   --font-mono:
     SuisseIntlMono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
