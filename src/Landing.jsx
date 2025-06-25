@@ -346,7 +346,7 @@ const Landing = () => {
           <div>
             {/*  */}
             {faqArr.map(() => (
-              <details className="group/dd overflow-hidden border-t-2 opacity-60 transition-colors duration-200 details-content:h-0 details-content:transition-[height,content-visibility] details-content:transition-discrete details-content:duration-200 open:opacity-100 open:details-content:h-auto">
+              <details className=" cursor-pointer group/dd overflow-hidden border-t-2 opacity-60 transition-colors duration-200 details-content:h-0 details-content:transition-[height,content-visibility] details-content:transition-discrete details-content:duration-200 open:opacity-100 hover:opacity-100  open:details-content:h-auto">
                 <summary className="flex list-none items-center justify-between py-4 text-lg">
                   <p>Why 1000 units?</p>
                   <span className="transition-transform duration-500 group-open/dd:rotate-180">

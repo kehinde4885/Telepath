@@ -3,6 +3,9 @@ Project Files for the Telepath Website
 Note:
 Local history is Excluded from VS Code using files.Exclude Workspace Settings
 
+Note:
+Maybe i could implement REsponsiveness through Javascript and not CSS?
+
 Vite imports its CSS Through Javascript(MDN Docs for more)
 
 
